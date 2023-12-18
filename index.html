@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Une page web sur Kirby.">
+    <meta name="author" content="Matilda Kang">
+    <meta name="robots" content="noindex">
+    <title>Kirby</title>
+</head>
+
+
+<body>
+ <!-- header de la page : logo, titre et navigation-->
+    <header>
+        <div>
+            <ion-icon name="game-controller-outline"></ion-icon>
+            <h1>Site web sur Kirby</h1>
+        </div>
+        
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#inscription">Inscription</a>
+            <a href="#tableau">Tableau</a>
+            <a href="#article">Article</a>
+            <a href="#video">Vidéo</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+
+
+<!-- Section ccueil de la page contenant une image, le titre, l'auteure, une description et l'adresse GitHub-->
+    <section id="accueil">
+        <img src="images/800px-Kirby.webp" alt="Image de Kirby">
+
+        <div id="contText">
+            <h2 class="bigger">Kirby</h2>
+            <h3>Autrice: Matilda Kang</h3>
+            <p>Automne 2023<br>
+            582-1W1 – Mise en page Web<br>
+            Techniques d’Intégration Multimédia<br>
+            Collège de Maisonneuve<br>
+            TP2<br>
+            Adresse de la Github-page</p>
+        </div>
+    </section>
+
+<!-- Section inscription de la page contenant un formulaire avec un titre-->
+    <section id="inscription">
+        <form>
+
+            <h2>Inscrivez-vous au fan club de Kirby</h2>
+
+            <fieldset>
+
+        <legend>Créer-vous un compte</legend>
+
+        <div class="marginLabelInput">
+            <label for="utilisateur">Nom d'utilisateur:</label>
+            <input type="text" id="utilisateur" name="utilisateur"><br>
+        </div>
+
+        <div class="marginLabelInput">
+            <label for="pwd">Mot de passe:</label>
+            <input type="password" id="pwd" name="pwd"><br>
+        </div>
+
+        <div class="marginLabelInput">
+            <label for="email">Adresse courriel:</label>
+            <input type="email" id="email" name="email"><br>
+        </div>
+
+        <div class="marginLabelInput">
+            <label for="genre">Votre genre:</label>
+            <select id="genre" name="genre">
+            <option value="femme">Femme</option>
+            <option value="homme">Homme</option>
+            <option value="nonprecise">Non précisé</option>
+            <option value="personnalise">Personnalisé</option>
+            </select><br>
+        </div>
+        
+        <div class="marginLabelInput">
+            <label for="anniversaire">Votre anniversaire:</label>
+            <input type="date" id="anniversaire" name="anniversaire"><br>
+        </div>
+    
+        <div class="marginLabelInput">
+            <label for="profile">Choisis ton profile:</label>
+            <input type="file" id="profile" name="profile"><br>
+        </div>
+
+        <div class="marginLabelInput">
+            <input type="submit" value="Soumettre" aria-label="Soumettre">
+            <input type="reset" value="Réinitialiser" aria-label="Soumettre">
+        </div>
+
+        </fieldset>
+        </form>
+        
+    </section>
+
+
+<!-- Section tableau de la page contenant une table avec une entête de table et une légende -->
+    <section id="tableau">
+        <table>
+            <caption><h3>Liste des meilleurs ventes des jeux vidéos de Kriby</h3></caption>
+
+        <tr>
+            <th>Titre</th>
+            <th>Année</th>
+            <th>Vente</th>
+            <th>Système</th>
+        </tr>
+
+        <tr>
+            <td><img class="smallerGameImage" src="images/gameforgottenland.webp" alt="Le jeu Forgotten Land de Kirby"></td>
+            <td><p>2022</p></td>
+            <td><p>6.46 million</p></td>
+            <td><img class="smallerImgSystem" src="images/nintendo-switch-logopng.png" alt="La Nintendo Switch"></td>
+        </tr>
+
+        <tr>
+            <td><img class="smallerGameImage" src="images/kirbydreamland.webp" alt="Le jeu Kirby Dream Land"></td>
+            <td><p>1992</p></td>
+            <td><p>5.15 million</p></td>
+            <td><img class="smallerImgSystem" src="images/Nintendo_Game_Boy_Logo.png" alt="La GameBoy"></td>
+        </tr>
+
+        <tr>
+            <td><img class="smallerGameImage" src="images/kirbystarallies.webp" alt="Le jeu Star Allies de Kirby"></td>
+            <td><p>2018</p></td>
+            <td><p>3.95 million</p></td>
+            <td><img class="smallerImgSystem" src="images/nintendo-switch-logopng.png" alt="La Nintendo Switch"></td>
+        </tr>
+        
+        <tr>
+            <td><img class="smallerGameImage" src="images/kirbysuperstarextra.webp" alt="Le jeu Kirby Super Star Ultra"></td>
+            <td><p>2008</p></td>
+            <td><p>2.99 million</p></td>
+            <td><img class="smallerImgSystem" src="images/Nintendo_DS_platform_icon.webp" alt="La Nintendo DS"></td>
+        </tr>
+
+        <tr>
+            <td><img class="smallerGameImage" src="images/kirbytripledeluxe.webp" alt="Le jeu Kirby Triple Deluxe"></td>
+            <td><p>2013</p></td>
+            <td><p>2.65 million</p></td>
+            <td><img class="smallerImgSystem" src="images/Nintendo_3DS_platform_icon.webp" alt="La Nintendo 3DS"></td>
+        </tr>
+      </table>
+    </section>
+
+
+<!-- Section article de la page contenant des articles avec des images et un titre-->
+    <section id="article">
+
+    <h2>3 raisons pourquoi Kirby est le meilleur!</h2>
+
+      <div id="conteneurArticle">
+        <article>
+            <h3>Ses capacités uniques</h3>
+            <p>Kirby, c'est un vrai caméléon dans le monde des jeux vidéo. Ce qui le rend top, c'est sa façon d'avaler ses ennemis pour choper leurs pouvoirs. Ça te file une tonne d'options pour jouer, comme avoir un sac à malices rempli de techniques différentes ! C'est ça qui garde le jeu toujours intéressant, tu découvres tout le temps de nouveaux trucs pour botter les fesses des méchants.</p>
+            <img src="images/kirbyForgottenLand.png" alt="Kirby dans le jeu de Forgotten Land">
+        </article>
+
+        <article>
+            <h3>Son évolution dans les jeux vidéo</h3>
+            <p>Ce qui est cool avec Kirby, c'est comment il reste dans le coup. Il évolue avec le temps, passant des jeux classiques à des trucs plus modernes. C'est comme s'il s'adaptait à tous les goûts ! Cette évolution, c'est la garantie qu'il y aura toujours un jeu Kirby qui te bottera, que tu sois fan des vieux classiques ou des nouvelles tendances du gaming. Kirby reste cool en changeant les règles et en restant dans la course des jeux vidéo.</p>
+            <img src="images/kirbyAncienneVersion.png" alt="Kirby dans une vielles versions">
+        </article>
+
+        <article>
+            <h3>Son charme</h3>
+            <img src="images/Kirby-Star-Allies-8-min.jpg" alt="Un Kirby qui semble content">
+            <p>Sérieux, regarde cette petite bouille mignonne de Kirby ! C'est juste impossible de ne pas craquer. Mais c'est pas juste son look, c'est aussi son attitude. Kirby, c'est le gars toujours de bonne humeur, il carbure à l'amitié et à la justice. Jouer à ses jeux, c'est comme entrer dans un monde où tout respire la bonne humeur.</p>
+        </article>
+      </div>
+    </section>
+
+
+
+<!-- Section video de la page contenant une vidéo avec une description et un titre-->
+    <section id="video">
+        <h2>Une parodie de Kirby</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8JzyquUk1NY?si=GUZnJ7yoAf8jAbCa" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Cette animation ou cette parodie, publiée en 2020, à propos de Kirby, sur le jeu Kirby & the Amazing Mirror, est faite par le créateur TerminalMonatge qui publie beaucoup d'incroyable animation parodie au sujet des jeux de Kirby, Mario, Link, Pokémon, etc.</p>
+    </section>
+
+
+
+<!-- Section galerie de la page contenant des images de kirby en vignette-->
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <p>Quelques transformations de Kirby...</p>
+
+        <div>
+            <a href="images/forgottenLand/kirby1dragon.png"><img src="images/galerie/Kirby1.png" alt="Kirby avec des pouvoirs de dragon"></a>
+            <a href="images/forgottenLand/kirby2sleep.png"><img src="images/galerie/Kirby2.png" alt="Kirby en mode sommeil"></a>
+            <a href="images/forgottenLand/kirby3car.png"><img src="images/galerie/Kirby3.png" alt="Kirby, mais transformé en véhicule"></a>
+            <a href="images/forgottenLand/kirby4spaceranger.webp"><img src="images/galerie/Kirby4.png" alt="Kirby avec des pouvoirs de space ranger"></a>
+            <a href="images/forgottenLand/kirby5deepsleep.png"><img src="images/galerie/Kirby5.png" alt="Kirby en mode sommeil profond"></a>
+            <a href="images/forgottenLand/kirby6sword.png"><img src="images/galerie/Kirby6.png" alt="Kirby avec une épée"></a>
+            <a href="images/forgottenLand/kirby7ninja.webp"><img src="images/galerie/Kirby7.png" alt="Un Kirby ninja"></a>
+            <a href="images/forgottenLand/kirby8metaknight.webp"><img src="images/galerie/Kirby8.png" alt="Kirby avec des pouvoirs de Meta Knight"></a>
+            <a href="images/forgottenLand/kirby9chainbomb.webp"><img src="images/galerie/Kirby9.png" alt="Kirby avec des pouvoirs d'explosives"></a>
+            <a href="images/forgottenLand/kirby10mirror.webp"><img src="images/galerie/Kirby10.png" alt="Kirby avec des pouvoirs de mirroir"></a>
+            <a href="images/forgottenLand/kirby11bomb.webp"><img src="images/galerie/Kirby11.png" alt="Kirby avec des pouvoirs d'explosives, mais moins meilleur"></a>
+            <a href="images/forgottenLand/kirby12morphoknight.png"><img src="images/galerie/Kirby12.png" alt="Kirby aveec des pouvoirs de Morpho Knight"></a>
+            </div>   
+    </section>
+
+
+
+<!-- footer de la page contenant des informations, l'avis et les logos-->
+    <footer id="contacts">
+        <p> 3800 Sherbrooke St E, Montreal, Quebec H1X 2A2</p>
+        <p>Intégration Multimédia, Collège de Maisonneuve</p>
+        <a href="https://kirby.nintendo.com/about/">Site Officiel de Kirby</a>
+
+        <p class="footerPetitText"> Avis de confidentialité | Privacy Notice</p>
+      
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-pinterest"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-discord"></ion-icon>
+        
+    </footer>
+
+ <!--liens pour permettre aux icones d'apparaitre-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>

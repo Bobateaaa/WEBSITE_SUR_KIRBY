@@ -1,0 +1,338 @@
+/* Ajuster les fonds des textes et définir la police par défaut */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Intégration du smooth-scroll pour le défilement fluide */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Utilisation de flexbox en rangée avec flex-wrap pour header, #accueil, #conteneurArticle, #galerie div */
+header, #accueil, #conteneurArticle, #galerie div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Utilisation de flexbox en colonne avec flex-wrap pour #inscription, #tableau, #video, #galerie */
+#inscription, #tableau, #video, #galerie  {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Ajustement de la largeur des éléments en fonction de la taille du contenu */
+th p, td p, td img, form, fieldset, a, header div, h2, h3{
+    width: fit-content;
+}
+
+/* Stylisation des sous-titres de la page et ajout d'une marge */
+h2, h3{
+    font-family: Century Gothic, 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Ajuster la taille de la police des sous-titres h2 */
+h2 {
+    font-size: 29px;
+}
+
+/* Ajustement des marges et de la disposition de chaque section */
+#accueil, #inscription, #tableau, #article ,#video ,#galerie {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
+    height: fit-content;
+}
+
+
+/*Stylisation pour le header*/
+header {
+    z-index: 1;
+
+    width: 100vw;
+    padding: 10px 10px 10px 10px;
+
+    background-color: #fff;
+
+    position: fixed;
+
+    align-items: center;
+    justify-content: space-around;
+}
+header div { /*Aligner le logo et le titre*/
+    display: flex;
+    flex-flow: nowrap row;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 10px;
+}
+ion-icon { /*Styliser le logo*/
+    margin-right: 5px;
+    font-size: 29px;
+    color: rgb(207, 130, 130);
+}
+a { /*Styliser le lien*/
+    color: rgb(25, 2, 9);
+    margin: auto 2px;
+}
+header h1 {/*Styliser le titre*/
+    margin: 3px auto;
+    font-size: 3vh;
+    color: palevioletred;
+}
+
+
+    
+
+    
+/*Stylisation pour la section accueil */
+#accueil {
+    background-color: rgb(231, 187, 195);
+    background-image: url("images/arrierePlan1.jpg");
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+#accueil img { /*Aligner l'image*/
+    margin: 0px 0px 20px 0px;
+    width: 55vw;
+    
+    transition: transform 10s; /*Transititon*/
+}
+#accueil img:hover { /*Transformation agrandie et rotation sur l'image*/
+    transform: scale(1.1) rotate(10deg); 
+    -webkit-transform: scale(1.1) rotate(10deg) ;
+    -moz-transform: scale(1.1) rotate(10deg);
+    -ms-transform: scale(1.1) rotate(10deg);
+    -o-transform: scale(1.1) rotate(10deg);
+}
+#accueil p, h1 { /*Centrer les textes*/
+    text-align: center;
+}
+#contText { /*Styliser et déterminer des marges et des paddings du contenteur texte*/
+    margin: 20px auto 40px auto;
+    padding: 20px 40px 40px 40px;
+
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px #d0e7ff;
+
+    background-color: #e8f3ffca;
+}
+#contText:hover{  /*Transformation agrandie sur le conteneur des textes*/
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+
+
+/*Stylisation pour la section inscription */
+#inscription {
+    z-index: 1;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+form { /*Ajout de marge*/
+    margin: 20px auto;
+}
+fieldset{ /*Aligner, styliser, déterminer des marges*/
+    margin-top: 30px;
+    margin: auto;
+
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgba(175, 226, 255, 0.7);
+    box-shadow: 20px 20px 1px #041b3d;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+input, label{ /*Déterminer les paddings*/
+    padding: 5px 20px 5px 20px;
+}
+.marginLabelInput { /*normalize.css force les marges a ce coller, alors il faut créer une classe pour pouvoir ajuster le marge correctement*/
+    margin: 20px 0px 20px 0px;
+}
+
+
+
+
+/*Stylisation pour la section tableau */
+#tableau {
+    background-image: url("images/backkirb4.jpg");
+
+    align-items: center;
+    justify-content: center;
+}
+table { /*Styliser et aligner le tableau*/
+    margin: 100px auto;
+    height: 75vh;
+    
+    box-shadow: 10px 10px 1px #ff8fb2;
+}
+table, th, td { /*Styliser le tableau*/
+    border: 3px solid black;
+    background-color: rgb(255, 199, 218);
+}
+th, td { /*Déterminer des paddings*/
+    padding: 5px;
+}
+th p, td p, td img { /*Déterminer des marges*/
+    margin: 5px auto;
+}
+
+
+
+
+/*Stylisation pour la section article */
+#article {
+    background-color: rgb(255, 179, 228);
+}
+#article img { /*Marge des images et ajout de bordure*/
+    margin: 10px auto 10px auto;
+    max-width: 300px;
+
+    border: 1px solid black;
+}
+#conteneurArticle { /*Marge du conteneur des articles et aligner les éléments flex*/
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;  
+    
+    margin: 100px auto 100px auto;
+    
+    transition: background-color 2s /*transition*/
+}
+#conteneurArticle:hover{ /*Changement de couleur d'arriere plan du conteneur des articles*/
+    transition: background-color 2s;
+    background-color: rgb(255, 218, 230);
+}
+article p{  /*Ajout de marge*/
+    margin: 10px auto 10px auto
+}
+article { /*Styliser et aligner chaque articles (colonnes)*/
+    padding: 20px 20px 20px 20px;
+    margin: 50px auto;
+    width: 300px;
+
+    background-color: #ff8fb2;
+    box-shadow: 15px 15px 1px #fbdde6;
+    border: 1px solid black;
+}
+article:hover { /*transformation sur les articles*/
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+
+/*Stylisation pour la section video */
+#video {
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(232, 213, 105);
+}
+iframe { /*Styliser et ajuster la disposition de la video */
+    height: 50vh;
+    width: 60vw;
+    margin: 20px auto;
+    box-shadow: 0px 0px 1000px #ffffdc;
+    box-shadow: 10px 10px 1px #3d3404;
+}
+#video p { /*Ajout de marge*/
+    margin-top: 20px;
+    width: 60vw;
+}
+
+
+
+
+
+/*Stylisation pour la section galerie */
+#galerie {
+    background-color: pink;
+    align-content: center;
+}
+#galerie p{  /*Centrer les textes*/
+    text-align: center;
+
+}
+#galerie div { /*Ajuster la disposition du conteneur des images*/
+    align-items: center;
+    justify-content: center;
+    margin: auto 0 auto 0;
+    width: 80%;
+}
+#galerie img { /*Ajuster et styliser la dispositon des images*/
+    width: 100px;
+    margin: 20px 20px 20px 20px;
+
+    border: 5px solid rgb(38, 1, 32);
+    box-shadow: 10px 10px 1px #f47dff;
+    border-radius: 100px;
+
+    transition: 2s; /*Transition de 2s*/
+}
+#galerie img:hover { /*Transformation d'agrandissment*/
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);    
+}
+
+
+
+
+/*Stylisation pour le footer*/
+footer {
+    padding: 30px 0px 10px 0px;
+    background-color: palevioletred;
+    text-align: center;
+}
+footer a{  /*Styliser la couleur des liens*/
+    color: rgb(0, 0, 0);
+}
+footer ion-icon{ /*Styliser et ajuster les icones*/
+    color: #fbdde6;
+    margin: 20px 10px 10px 10px;
+    font-size: 30px;   
+}
+
+
+
+
+/*Ajustement de la taille des images*/
+.footerPetitText{ 
+    margin: 20px 0px 0px 0px;
+    font-size: 12px;
+}
+.bigger { /*Ajuster la taille du titre dans la section accueil*/
+    font-size: 10vw;
+}
+.smallerGameImage {  /*Ajustement de la taille des images titres dans la section tableau*/
+    width: 100px;
+}
+.smallerImgSystem { /*Ajustement de la taille des images titres dans la section system*/
+    width: 75px;
+}
+
+
+
