@@ -1,2 +1,1 @@
-# tp2_Kirby
-Un site web sur le personnage fictionnel de Kirby 
+# Un site web au sujet de Kirby 
